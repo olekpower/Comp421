@@ -96,7 +96,8 @@ CREATE TABLE dogFriends (
 	dog1 INTEGER NOT NULL,
 	dog2 INTEGER NOT NULL,
 	
-	FOREIGN KEY (dog1, dog2) REFERENCES dogProfiles(did)
+	FOREIGN KEY (dog1) REFERENCES dogProfiles(did)
+	FOREIGN KEY (dog2) REFERENCES dogProfiles(did)
 );
 
 
