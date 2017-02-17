@@ -155,7 +155,7 @@ CREATE TABLE uploadsPhoto (
 	photoID INTEGER NOT NULL,
 	
 	FOREIGN KEY(uploader) REFERENCES dogProfiles(did)
-	FOREIGN KEY(photoID) REFERNECES dogPictures(pid)
+	FOREIGN KEY(photoID) REFERENCES dogPictures(pid)
 );
 
 
@@ -165,7 +165,7 @@ CREATE TABLE tagsPhoto (
 	photoID INTEGER NOT NULL,
 	
 	FOREIGN KEY(tagger, taggee) REFERENCES dogProfiles(did)
-	FOREIGN KEY(photoID) REFERNECES dogPictures(pid)
+	FOREIGN KEY(photoID) REFERENCES dogPictures(pid)
 
 );
 
@@ -179,8 +179,8 @@ CREATE TABLE membersOfClubs (
 	dogId INTEGER,
 	clubId INTEGER NOT NULL,
 
-	FOREIGN KEY(dogId) REFERNECES dogProfiles(did)
-	FOREIGN KEY(clubId) REFERNECES dogClubs(cid)
+	FOREIGN KEY(dogId) REFERENCES dogProfiles(did)
+	FOREIGN KEY(clubId) REFERENCES dogClubs(cid)
 
 );
 
