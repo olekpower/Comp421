@@ -9,10 +9,10 @@ CREATE TABLE dogProfiles (
 	
 );
 
-
 CREATE TABLE dogStatuses (
 	content VARCHAR (1000) NOT NULL,
 	uploadTime DATE,
+	did INTEGER,
 	
 	--Is this right? Should be uploadTime plus did,
 	--idk how to show that. Maybe we could rework
