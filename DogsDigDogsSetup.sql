@@ -1,12 +1,12 @@
 -- Independent Entity Tables
-DROP TABLE dogProfiles
-DROP TABLE dogStatuses
-DROP TABLE dogPictures
-DROP TABLE dogClubs
-DROP TABLE dogEvents
-DROP TABLE ownerProfiles
-DROP TABLE retailers
-DROP TABLE services
+--DROP TABLE dogProfiles
+--DROP TABLE dogStatuses
+--DROP TABLE dogPictures
+--DROP TABLE dogClubs
+--DROP TABLE dogEvents
+--DROP TABLE ownerProfiles
+--DROP TABLE retailers
+--DROP TABLE services
 
 
 CREATE TABLE dogProfiles (
@@ -95,15 +95,8 @@ CREATE TABLE retailers (
 
 
 
-
-
-
-
-
-
-
 -- THIS WHOLE SECTION NEEDS CHECKING
--- Relational Entity Tables	15
+-- Relational Entity Tables
 DROP TABLE dogFriends 
 DROP TABLE familyMembers 
 DROP TABLE relationships  
