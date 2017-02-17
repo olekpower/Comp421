@@ -1,5 +1,4 @@
 -- Independent Entity Tables
-
 DROP TABLE dogProfiles
 DROP TABLE dogStatuses
 DROP TABLE dogPictures
@@ -95,7 +94,115 @@ CREATE TABLE retailers (
 
 
 
--- Relational Entity Tables
+
+
+
+
+
+
+
+
+-- THIS WHOLE SECTION NEEDS CHECKING
+-- Relational Entity Tables	15
+DROP TABLE dogFriends 1
+DROP TABLE familyMembers 2
+DROP TABLE relationships 3 
+DROP TABLE uploadsPhoto 4
+DROP TABLE tagsPhoto 5 
+DROP TABLE makesStatus 6
+DROP TABLE membersOfClubs 7
+DROP TABLE clubAdmins 8
+DROP TABLE goingToEvent 9
+DROP TABLE ownsDogs 10
+DROP TABLE eventAdmins 11
+DROP TABLE servicesSponsorEvents 12
+DROP TABLE ownerReservesServices 13
+DROP TABLE retailAdmins 14
+DROP TABLE serviceAdmins 15
+
+
+
+
+
+
+
+CREATE TABLE dogFriends (
+	dog1 INTEGER NOT NULL,
+	dog2 INTEGER NOT NULL,
+	
+	FOREIGN KEY (dog1, dog2) REFERENCES dogProfile(did)
+);
+
+
+CREATE TABLE familyMembers (
+
+);
+
+
+CREATE TABLE relationships (
+
+);
+
+
+CREATE TABLE uploadsPhoto (
+
+);
+
+
+CREATE TABLE tagsPhoto (
+
+);
+
+
+CREATE TABLE makesStatus (
+
+);
+
+
+CREATE TABLE membersOfClubs (
+
+);
+
+
+CREATE TABLE clubAdmins (
+
+);
+
+
+CREATE TABLE goingToEvent (
+
+);
+
+
+CREATE TABLE ownsDogs (
+
+);
+
+
+CREATE TABLE eventAdmins (
+
+);
+
+
+CREATE TABLE servicesSponsorEvents (
+
+);
+
+
+CREATE TABLE ownerReservesServices (
+
+);
+
+
+CREATE TABLE retailAdmins (
+
+);
+
+
+CREATE TABLE serviceAdmins (
+
+);
+
 
 
 
