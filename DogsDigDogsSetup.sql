@@ -135,73 +135,80 @@ CREATE TABLE dogFriends (
 
 
 CREATE TABLE familyMembers (
-
+	dog1 INTEGER NOT NULL,
+	dog2 INTEGER NOT NULL,
+	
+	FOREIGN KEY (dog1, dog2) REFERENCES dogProfile(did)\
 );
 
 
 CREATE TABLE relationships (
-
+	startTime DATE NOT NULL,
+	dog1 INTEGER NOT NULL,
+	dog2 INTEGER NOT NULL,
+	
+	FOREIGN KEY (dog1, dog2) REFERENCES dogProfile(did)
 );
 
 
-CREATE TABLE uploadsPhoto (
+--CREATE TABLE uploadsPhoto (
 
-);
-
-
-CREATE TABLE tagsPhoto (
-
-);
+--);
 
 
-CREATE TABLE makesStatus (
+--CREATE TABLE tagsPhoto (
 
-);
-
-
-CREATE TABLE membersOfClubs (
-
-);
+--);
 
 
-CREATE TABLE clubAdmins (
+--CREATE TABLE makesStatus (
 
-);
-
-
-CREATE TABLE goingToEvent (
-
-);
+--);
 
 
-CREATE TABLE ownsDogs (
+--CREATE TABLE membersOfClubs (
 
-);
-
-
-CREATE TABLE eventAdmins (
-
-);
+--);
 
 
-CREATE TABLE servicesSponsorEvents (
+--CREATE TABLE clubAdmins (
 
-);
-
-
-CREATE TABLE ownerReservesServices (
-
-);
+--);
 
 
-CREATE TABLE retailAdmins (
+--CREATE TABLE goingToEvent (
 
-);
+--);
 
 
-CREATE TABLE serviceAdmins (
+--CREATE TABLE ownsDogs (
 
-);
+--);
+
+
+--CREATE TABLE eventAdmins (
+
+--);
+
+
+--CREATE TABLE servicesSponsorEvents (
+
+--);
+
+
+--CREATE TABLE ownerReservesServices (
+
+--);
+
+
+--CREATE TABLE retailAdmins (
+
+--);
+
+
+--CREATE TABLE serviceAdmins (
+
+--);
 
 
 
