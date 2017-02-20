@@ -10,3 +10,10 @@ INSERT INTO dogProfiles Values ( 8, 'Cocoa', 0, 0, to_date('2016-08-24', 'YYYY-M
 INSERT INTO dogProfiles Values ( 9, 'Hammy', 1, 1, to_date('2017-01-29', 'YYYY-MM-DD'));
 INSERT INTO dogProfiles Values ( 10, 'JellyBeans', 0, 0, to_date('2007-06-16', 'YYYY-MM-DD'));
 
+--dogStatuses
+--dogPictures
+--dogClubs
+--dogEvents
+--ownerProfiles
+--services
+--retailers
