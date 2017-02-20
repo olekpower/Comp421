@@ -1,11 +1,3 @@
-DROP TABLE dogProfiles;
-DROP TABLE dogStatuses;
-DROP TABLE dogPictures;
-DROP TABLE dogClubs;
-DROP TABLE dogEvents;
-DROP TABLE ownerProfiles;
-DROP TABLE retailers;
-DROP TABLE services;
 DROP TABLE dogFriends;
 DROP TABLE familyMembers; 
 DROP TABLE relationships;
@@ -21,5 +13,13 @@ DROP TABLE servicesSponsorEvents;
 DROP TABLE ownerReservesServices; 
 DROP TABLE retailAdmins; 
 DROP TABLE serviceAdmins;
+DROP TABLE dogStatuses;
+DROP TABLE dogPictures;
+DROP TABLE dogClubs;
+DROP TABLE dogEvents;
+DROP TABLE ownerProfiles;
+DROP TABLE retailers;
+DROP TABLE services;
+DROP TABLE dogProfiles;
 
 

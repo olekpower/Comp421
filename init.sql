@@ -2,7 +2,7 @@ CREATE TABLE dogProfiles (
 	did INTEGER NOT NULL,
 	name VARCHAR (100),
 	gender INTEGER,
-	relationshipStatus VARCHAR(20),
+	relationship_Status VARCHAR(20),
 	birthdate DATE,
 
 	PRIMARY KEY(did)
@@ -11,13 +11,10 @@ CREATE TABLE dogProfiles (
 
 CREATE TABLE dogStatuses (
 	content VARCHAR (1000) NOT NULL,
-	uploadTime DATE,
-	did INTEGER,
+	upload_Time DATE NOT NULL,
+	did INTEGER NOT NULL,
 	
-	--Is this right? Should be uploadTime plus did,
-	--idk how to show that. Maybe we could rework
-	--our ER diagram
-	PRIMARY KEY (uploadTime),
+	PRIMARY KEY (did, upload_Time),
 	FOREIGN KEY (did) REFERENCES dogProfiles(did)
 	
 );
@@ -25,7 +22,7 @@ CREATE TABLE dogStatuses (
 
 CREATE TABLE dogPictures (
 	pid INTEGER NOT NULL,
-	uploadTime DATE,
+	upload_Time DATE,
 
 	PRIMARY KEY(pid)
 );
@@ -44,7 +41,7 @@ CREATE TABLE dogEvents (
 	eid INTEGER NOT NULL,
 	name VARCHAR (100) NOT NULL,
 	location VARCHAR (200),
-	eventTime DATE NOT NULL,
+	event_Time DATE NOT NULL,
 
 	PRIMARY KEY(eid)
 );
@@ -52,7 +49,7 @@ CREATE TABLE dogEvents (
 
 CREATE TABLE ownerProfiles (
 	opid INTEGER NOT NULL,
-	facebookLink VARCHAR (200) NOT NULL,
+	facebook_Link VARCHAR (200) NOT NULL,
 	name VARCHAR (100) NOT NULL,
 
 	PRIMARY KEY(opid)
@@ -76,7 +73,7 @@ CREATE TABLE retailers (
 	location VARCHAR (200),
 	name VARCHAR (100) NOT NULL,
 	description VARCHAR(1000),
-	websiteLink VARCHAR (200),
+	website_Link VARCHAR (200),
 
 	PRIMARY KEY(rid)
 );
@@ -107,7 +104,7 @@ CREATE TABLE familyMembers (
 
 
 CREATE TABLE relationships (
-	startTime DATE NOT NULL,
+	start_Time DATE NOT NULL,
 	dog1 INTEGER NOT NULL,
 	dog2 INTEGER NOT NULL,
 	
@@ -118,21 +115,21 @@ CREATE TABLE relationships (
 
 CREATE TABLE uploadsPhoto (
 	uploader INTEGER NOT NULL,
-	photoID INTEGER NOT NULL,
+	photoId INTEGER NOT NULL,
 	
 	FOREIGN KEY(uploader) REFERENCES dogProfiles(did),
-	FOREIGN KEY(photoID) REFERENCES dogPictures(pid)
+	FOREIGN KEY(photoId) REFERENCES dogPictures(pid)
 );
 
 
 CREATE TABLE tagsPhoto (
 	tagger INTEGER NOT NULL,
 	taggee INTEGER NOT NULL,
-	photoID INTEGER NOT NULL,
+	photoId INTEGER NOT NULL,
 	
 	FOREIGN KEY(tagger) REFERENCES dogProfiles(did),
 	FOREIGN KEY(taggee) REFERENCES dogProfiles(did),
-	FOREIGN KEY(photoID) REFERENCES dogPictures(pid)
+	FOREIGN KEY(photoId) REFERENCES dogPictures(pid)
 
 );
 
@@ -224,6 +221,16 @@ CREATE TABLE serviceAdmins (
 
 );
 
+
+--How can we do this??????
+CREATE TABLE makesStatus (
+	did INTEGER,
+	did, upload_Time
+
+	FOREIGN KEY(ownerId) REFERENCES ownerProfiles(opid),
+	FOREIGN KEY(serviceId) REFERENCES services(sid)
+
+);
 
 
 
