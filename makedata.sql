@@ -59,17 +59,44 @@ INSERT INTO dogClubs VALUES (6, 'Airbud4Life', 'AIRBUDAIRBUDAIERBUD 4 LIIIIIIIII
 INSERT INTO dogClubs VALUES (7, 'Maybe Cat People', 'For the other users who just are not sure if they really are dog people.');
 
 --dogEvents
-INSERT INTO dogClubs VALUES (1, 'Dog Dance Disco Party', '48 London Street, Tokyo', to_date('2012-06-18', 'YYYY-MM-DD'));
+INSERT INTO dogClubs VALUES (1, 'Dog Dance Disco Party', '48 London Street, Tokyo', to_date('2012-11-11', 'YYYY-MM-DD'));
 INSERT INTO dogClubs VALUES (2, 'Dogs against Capitalism', '199 st. Boulevard, NY', to_date('2013-02-14', 'YYYY-MM-DD'));
 INSERT INTO dogClubs VALUES (3, 'Led Zeppelin & Their Dogs', '55 Talkum blvd, Amsterdam', to_date('2009-01-29', 'YYYY-MM-DD'));
 INSERT INTO dogClubs VALUES (4, 'Yoga, for Dogs!', '1024 Simon Street, Toronto', to_date('2007-11-31', 'YYYY-MM-DD'));
 INSERT INTO dogClubs VALUES (5, 'Hot Dogs and Dogs', '96 Pacer Road, Santiago', to_date('2006-12-25', 'YYYY-MM-DD'));
-INSERT INTO dogClubs VALUES (6, 'Anit-Cat Rally', '99 rue du Conejo, Paris', to_date('2005-05-25', 'YYYY-MM-DD'));
+INSERT INTO dogClubs VALUES (6, 'Anti-Cat Rally', '99 rue du Conejo, Paris', to_date('2005-05-25', 'YYYY-MM-DD'));
 INSERT INTO dogClubs VALUES (7, 'DogaPalooza! It is wild up in here!', '2056 Hendrix drive, Seattle', to_date('2004-03-03', 'YYYY-MM-DD'));
 
 
-
-
 --ownerProfiles
+INSERT INTO ownerProfiles VALUES (1, 'Hank', 'http://facebook/Hank');
+INSERT INTO ownerProfiles VALUES (2, 'Jess', 'http://facebook/Jess');
+INSERT INTO ownerProfiles VALUES (3, 'Tim', 'http://facebook/Tim');
+INSERT INTO ownerProfiles VALUES (4, 'Monica', 'http://facebook/Monica');
+INSERT INTO ownerProfiles VALUES (5, 'Clayton', 'http://facebook/Clayton');
+INSERT INTO ownerProfiles VALUES (6, 'Thomas', 'http://facebook/Thomas');
+INSERT INTO ownerProfiles VALUES (7, 'Vanessa', 'http://facebook/Vanessa');
+INSERT INTO ownerProfiles VALUES (8, 'Andrea', 'http://facebook/Andrea');
+INSERT INTO ownerProfiles VALUES (9, 'Alice', 'http://facebook/Alice');
+INSERT INTO ownerProfiles VALUES (10, 'Carl', 'http://facebook/Carl');
+INSERT INTO ownerProfiles VALUES (11, 'Carlston', 'http://facebook/Carlston');
+INSERT INTO ownerProfiles VALUES (12, 'Henry', 'http://facebook/Henry');
+INSERT INTO ownerProfiles VALUES (13, 'Julia', 'http://facebook/Julia');
+INSERT INTO ownerProfiles VALUES (14, 'Ann', 'http://facebook/Ann');
+INSERT INTO ownerProfiles VALUES (15, 'Urooj', 'http://facebook/Urooj');
+INSERT INTO ownerProfiles VALUES (16, 'Martin', 'http://facebook/Martin');
+INSERT INTO ownerProfiles VALUES (17, 'Jonah', 'http://facebook/Jonah');
+INSERT INTO ownerProfiles VALUES (18, 'Hannah', 'http://facebook/Hannah');
+INSERT INTO ownerProfiles VALUES (19, 'Anika', 'http://facebook/Anika');
+INSERT INTO ownerProfiles VALUES (20, 'Bea', 'http://facebook/Bea');
+
+
 --services
+INSERT INTO services VALUES (1, 2, 'Toms Groomers', 'We cut your dogs hair and stuff', '48 London Street, Tokyo');
+INSERT INTO services VALUES (2, 2, 'Toms Groomers', 'We cut your dogs hair and stuff', '48 London Street, Tokyo');
+INSERT INTO services VALUES (3, 2, 'Toms Groomers', 'We cut your dogs hair and stuff', '48 London Street, Tokyo');
+INSERT INTO services VALUES (4, 2, 'Toms Groomers', 'We cut your dogs hair and stuff', '48 London Street, Tokyo');
+INSERT INTO services VALUES (5, 2, 'Toms Groomers', 'We cut your dogs hair and stuff', '48 London Street, Tokyo');
+
+
 --retailers
