@@ -2,7 +2,7 @@ CREATE TABLE dogProfiles (
 	did INTEGER NOT NULL,
 	name VARCHAR (100),
 	gender INTEGER,
-	relationship_Status VARCHAR(20),
+	relationship_Status VARCHAR(20) DEFAULT 'single',
 	birthdate DATE,
 
 	PRIMARY KEY(did)
@@ -10,10 +10,10 @@ CREATE TABLE dogProfiles (
 );
 
 CREATE TABLE dogStatuses (
-	content VARCHAR (1000) NOT NULL,
-	upload_Time DATE NOT NULL,
 	did INTEGER NOT NULL,
-	
+	upload_Time DATE NOT NULL,	
+	content VARCHAR (1000) NOT NULL,
+
 	PRIMARY KEY (did, upload_Time),
 	FOREIGN KEY (did) REFERENCES dogProfiles(did)
 	
@@ -218,18 +218,19 @@ CREATE TABLE serviceAdmins (
 
 	FOREIGN KEY(ownerId) REFERENCES ownerProfiles(opid),
 	FOREIGN KEY(serviceId) REFERENCES services(sid)
-
 );
 
 
 --How can we do this??????
 CREATE TABLE makesStatus (
 	did INTEGER,
-	did, upload_Time
+	upload_Time DATE NOT NULL,
+	
+	PRIMARY KEY (did, upload_Time),
 
-	FOREIGN KEY(ownerId) REFERENCES ownerProfiles(opid),
-	FOREIGN KEY(serviceId) REFERENCES services(sid)
+	FOREIGN KEY (did, upload_Time) REFERENCES dogStatuses(did, upload_Time),
 
+	FOREIGN KEY(did) REFERENCES dogProfiles(did)
 );
 
 
