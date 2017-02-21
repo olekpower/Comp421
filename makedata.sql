@@ -96,17 +96,6 @@ INSERT INTO services VALUES (3, 8, 'Jerrys Daycare', 'Hey dude! Well look after 
 INSERT INTO services VALUES (4, 10, 'Michael Seras Posh Dog Academy', 'Well make your dog all proper and stuff', '99 rue du Conejo, Paris');
 INSERT INTO services VALUES (5, 1, 'DogFood Hut', 'We only serve Dog Food and stuff', '199 st. Boulevard, NY');
 
---retailers
-CREATE TABLE retailers (
-	rid INTEGER NOT NULL,
-	location VARCHAR (200),
-	name VARCHAR (100) NOT NULL,
-	description VARCHAR(1000),
-	website_Link VARCHAR (200),
-
-	PRIMARY KEY(rid)
-);
-
 INSERT INTO retailers VAlUES (1, 'Dog Planet', '2056 Hendrix drive, Seattle', 'We have everything for dogs, everything you could ever want...', 'http://dogplanet.com');
 INSERT INTO retailers VAlUES (2, 'Doggy Swagz', NULL, 'We got all the swag for Dogs and their owners', 'http://dogswaGGGG.com');
 INSERT INTO retailers VAlUES (3, 'Dog Capes Inc.', '1028 Melvin avenue, Wisconsin', 'We have capes in all sizes, except larger and small', 'http://dogcapes.gov');
