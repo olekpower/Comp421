@@ -41,7 +41,7 @@ CREATE TABLE dogEvents (
 	eid INTEGER NOT NULL,
 	name VARCHAR (100) NOT NULL,
 	location VARCHAR (200),
-	event_Time DATE NOT NULL,
+	date DATE NOT NULL,
 
 	PRIMARY KEY(eid)
 );
