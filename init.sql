@@ -69,8 +69,8 @@ CREATE TABLE services (
 
 CREATE TABLE retailers (
 	rid INTEGER NOT NULL,
-	location VARCHAR (200),
 	name VARCHAR (100) NOT NULL,
+	location VARCHAR (200),
 	description VARCHAR(1000),
 	website_Link VARCHAR (200),
 
