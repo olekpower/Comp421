@@ -19,6 +19,16 @@ INSERT INTO dogProfiles Values ( 17, 'Tuggy', 1, 0, to_date('2007-09-07', 'YYYY-
 INSERT INTO dogProfiles Values ( 18, 'Clementine', 0, 0, );
 INSERT INTO dogProfiles Values ( 19, 'Buddy', 1, 1, to_date('2014-02-29', 'YYYY-MM-DD'));
 INSERT INTO dogProfiles Values ( 20, 'Rosa', 0, 1, to_date('2017-02-16', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 21, 'Alex', 0, 1, to_date('2011-03-21', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 22, 'MichaelAngelo', 1, 0, to_date('1999-07-17', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 23, 'Dianne', 0, 1, to_date('2001-05-28', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 24, 'Charles Decker', 1, 1, to_date('2012-11-09', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 25, 'Alpaca', 0, 0, to_date('2016-08-13', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 26, 'Elmo', 1, 0, to_date('2017-10-26', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 27, 'Layla', 0, 1, to_date('2008-12-12', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 28, 'Aardvark', 1, 1, to_date('2006-12-29', 'YYYY-MM-DD')
+INSERT INTO dogProfiles Values ( 29, 'Monkey', 0, 0, to_date('2013-04-16', 'YYYY-MM-DD'));
+INSERT INTO dogProfiles Values ( 30, 'Alan', 1, 0, to_date('2013-07-04', 'YYYY-MM-DD'));
 
 --dogStatuses
 INSERT INTO dogStatuses Values (4, to_date('2008-03-11', 'YYYY-MM-DD'), 'Lol I hate cats');
