@@ -61,7 +61,6 @@ CREATE TABLE services (
 	rate INTEGER,
 	name VARCHAR (100) NOT NULL,
 	description VARCHAR (1000),
-	category VARCHAR (100),
 	location VARCHAR (200),
 
 	PRIMARY KEY(sid)
